@@ -34,19 +34,24 @@ const pkmnIds = pokemon.map( p => p.id )
 
 
 const one = pokemon.filter(p => p.id % 3 === 0);
+const two = pokemon.filter(p => p.types.includes("fire"));
+const three = pokemon.filter(p => p.types.length > 1);
+const four = pokemon.map(p => p.name);
+const five = pokemon.filter(p => p.id > 99).map(p => p.name);
+const six = pokemon.filter(p => p.types.length == 1 && p.types[0] == "poison").map(p => p.name);
+const seven = pokemon.filter(p => p.types[1] == 'flying').filter(p => p.types[0]);
+const eight = pokemon.filter(p => p.types.includes("normal")).length;
 
 
 
-
-
-console.log(one);
-console.log(two);
-console.log(three);
-console.log(four);
-
-console.log(five);
-console.log(six);
-console.log(seven);
+// console.log(one);
+// console.log(two);
+// console.log(three);
+// console.log(four);
+// console.log('----------------------------------------------------------------------------------')
+// console.log(five);
+// console.log(six);
+// console.log(seven);
 console.log(eight);
 
 
